@@ -1,3 +1,4 @@
+<?php include 'session_check.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,31 +23,36 @@
 
 <body>
     <header>
-        
+
         <div class="nav">
-            <a href="index.html">Home</a>
-            <a href="tech.html">Technology</a>
-            <a href="sports.html">Sports</a>
-            <a href="world.html">World News</a>
-            <a href="contact.html">Contact</a>
-        </div><hr>
+            <a href="index.php">Home</a>
+            <a href="tech.php">Technology</a>
+            <a href="sports.php">Sports</a>
+            <a href="world.php">World News</a>
+            <a href="contact.php">Contact</a>
+            <?php if (isset($_SESSION['user_id'])): ?>
+                <a href="logout.php">Logout</a>
+            <?php else: ?>
+                <a href="login.php">Login</a>
+                <a href="signup.php">Signup</a>
+            <?php endif; ?>
+        </div>
+        <hr>
         <h1>News Today</h1>
     </header>
-    <article>
-        <h2>Welcome to News Today!</h2>
-        <p>
-            Your source for the latest news. Navigate through our sections to stay
-            updated.
-        </p>
-    </article>
+    <h2>Welcome to News Today!</h2>
+    <p>
+        Your source for the latest news. Navigate through our sections to stay
+        updated.
+    </p>
     <div>
         <h2>Recent Articles</h2>
         <ul>
-            <li><a href="article1.html">Breaking News: Market Hits Record High</a></li>
-            <li><a href="article2.html">Tech Trends: AI and Machine Learning</a></li>
-            <li><a href="article3.html">Sports Update: Championship Results</a></li>
-            <li><a href="article4.html">Global News: Climate Change Impact</a></li>
-            <li><a href="article5.html">Health: Tips for a Balanced Diet</a></li>
+            <li><a href="article1.php">Breaking News: Market Hits Record High</a></li>
+            <li><a href="article2.php">Tech Trends: AI and Machine Learning</a></li>
+            <li><a href="article3.php">Sports Update: Championship Results</a></li>
+            <li><a href="article4.php">Global News: Climate Change Impact</a></li>
+            <li><a href="article5.php">Health: Tips for a Balanced Diet</a></li>
         </ul>
     </div>
     <div>

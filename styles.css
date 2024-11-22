@@ -10,6 +10,13 @@ header {
     text-align: center;
 }
 
+.nav {
+    display: flex;
+    justify-content: center;
+    background: #35424a;
+    padding: 10px 0;
+}
+
 .nav a {
     margin: 0 15px;
     color: #ffffff;
@@ -18,7 +25,7 @@ header {
 
 .nav a:hover {
     color: #af0505;
-    background-color:bisque;
+    background-color: bisque;
 }
 
 article {
@@ -28,7 +35,48 @@ article {
     border-radius: 5px;
 }
 
-hr {  
-    border: 1px solid #f1f1f1;  
-    margin-bottom: 25px;  
-  }  
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+.registerbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 1;
+}
+
+.registerbtn:hover {
+    color: rgb(0, 0, 0);
+    background-color: #ff4b4b;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=password]:focus,
+textarea:focus {
+    background-color: orange;
+    outline: none;
+}
