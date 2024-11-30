@@ -31,19 +31,19 @@
     <article>
         <h2>Global Updates</h2>
         <p>Stay informed with the latest news from around the world.</p>
-        <img src="/assets/world_image.jpg" alt="World News" style="width: 30%; height: auto" />
+        <img src="assets/world_image.jpg" alt="World News" style="width: 30%; height: auto" />
     </article>
     <div>
         <h2>Recent World Articles</h2>
         <article>
             <h3>Climate Change Impact</h3>
             <p>How climate change is affecting different regions.</p>
-            <img src="/assets/climate_change.jpg" alt="Climate Change" style="width: 30%; height: auto" />
+            <img src="assets/climate_change.jpg" alt="Climate Change" style="width: 30%; height: auto" />
         </article>
         <article>
             <h3>Political Developments</h3>
             <p>Recent political events and their global impact.</p>
-            <img src="/assets/political_developments.jpg" alt="Political Developments"
+            <img src="assets/political_developments.jpg" alt="Political Developments"
                 style="width: 30%; height: auto" />
         </article>
     </div>
